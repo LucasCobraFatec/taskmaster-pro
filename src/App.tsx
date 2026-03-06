@@ -11,6 +11,7 @@ const [tasks, setTasks] = useState(mockTasks);
 
 
 return(
+  <Box padding="8" bg="gray.50" minHeight="100vh">
   <Stack gap="4" padding="4">
     {tasks.map(task =>
     <Card.Root key={task.id} width="320px">
@@ -22,6 +23,7 @@ return(
       
       )}
       </Stack>
+      </Box>
   
 );
 
