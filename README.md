@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# 🚀 TaskMaster Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação de gerenciamento de tarefas moderna, focada em performance e experiência do usuário (UX), desenvolvida durante meus estudos de React e ecossistema front-end.
 
-Currently, two official plugins are available:
+## 📋 Sobre o Projeto
+O **TaskMaster Pro** é um gerenciador de tarefas que permite visualizar e organizar afazeres de forma intuitiva. O objetivo principal deste projeto foi dominar o fluxo de dados no React e a estilização declarativa com Chakra UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🛠️ Tecnologias Utilizadas
+O projeto foi construído com as melhores práticas de mercado:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Vite**: Ferramenta de build ultra-rápida para o ecossistema web.
+* **React 18**: Biblioteca para construção de interfaces baseadas em componentes.
+* **TypeScript**: Adição de tipagem estática para garantir segurança e previsibilidade ao código.
+* **Chakra UI 3.3**: Framework de componentes acessíveis e altamente customizáveis.
+* **Git & GitHub**: Controle de versão e colaboração.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🎓 Aprendizados Técnicos
+Durante o desenvolvimento, pude aplicar e consolidar conceitos fundamentais:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* **Gerenciamento de Estado**: Uso do hook `useState` para criar estados reativos.
+* **Renderização de Listas**: Utilização do método `.map()` para transformar dados em elementos visuais.
+* **Tipagem Avançada**: Definição de `Interfaces` e `Types` para padronizar o formato das tarefas.
+* **Componentização**: Quebra da interface em partes menores e reutilizáveis.
+* **Integração de Bibliotecas**: Configuração de `Providers` (Context API) para frameworks de UI.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Como rodar o projeto
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/SEU_USUARIO/NOME_DO_REPO.git](https://github.com/SEU_USUARIO/NOME_DO_REPO.git)
+    ```
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+3.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🎨 Preview
+> [Aqui você pode colocar um print do seu site ou o link do deploy]
+
+Feito com ☕ e código por **[Lucas Cobra]**.
