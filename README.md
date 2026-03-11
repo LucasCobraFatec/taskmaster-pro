@@ -1,73 +1,60 @@
-# React + TypeScript + Vite
+# 🚀 TaskMaster Pro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TypeScript](https://img.shields.io/badge/typescript-%23007acc.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Chakra UI](https://img.shields.io/badge/Chakra--UI-319795?style=for-the-badge&logo=chakra-ui&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 
-Currently, two official plugins are available:
+O **TaskMaster Pro** é um gerenciador de tarefas robusto e moderno, focado em uma experiência de usuário limpa e eficiente. O projeto aplica conceitos avançados de manipulação de estado e tipagem estática.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 💡 Funcionalidades (CRUD Completo)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* **Adição Dinâmica**: Crie tarefas instantaneamente com validação de campos.
+* **Toggle de Status**: Alterne entre "pendente" e "concluída" com feedback visual (tachado).
+* **Exclusão Inteligente**: Remova tarefas da lista utilizando filtros de array de alta performance.
+* **Interface Responsiva**: Layout adaptável construído com Chakra UI 3.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologias e Conceitos Aplicados
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Frontend
+- **React 18**: Hooks (`useState`), renderização condicional e listas reativas.
+- **TypeScript**: Interfaces rigorosas, enums de status e segurança de tipos em toda a aplicação.
+- **Chakra UI 3**: Sistema de design declarativo e componentes acessíveis.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Arquitetura de Dados
+- **Imutabilidade**: Manipulação do estado via Spread Operator (`[...]`) e métodos não destrutivos como `.map()` e `.filter()`.
+- **Tipagem de Dados**: Centralização de tipos em arquivos `.ts` para escalabilidade.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Como Executar o Projeto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/LucasCobraFatec/taskmaster-pro.git](https://github.com/LucasCobraFatec/taskmaster-pro.git)
+    ```
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+3.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 📈 Evolução do Aprendizado
+
+Este projeto foi um marco no domínio do ecossistema React. Durante o desenvolvimento, superei desafios como:
+1.  Sincronização de estados complexos entre múltiplos componentes.
+2.  Resolução de conflitos de tipagem no TypeScript.
+3.  Implementação de UI moderna seguindo as convenções mais recentes do Chakra UI v3.
+
+---
+
+Feito com ☕ por **[Lucas Cobra]** [LinkedIn](https://www.linkedin.com/in/lucascobra/) • [GitHub](https://github.com/LucasCobraFatec)
