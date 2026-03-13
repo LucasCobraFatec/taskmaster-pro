@@ -1,7 +1,7 @@
-import { Provider } from "./components/ui/provider" // O caminho pode variar conforme a instalação
-import React from "react"
-import ReactDOM from "react-dom/client"
-import App from "./App"
+import { Provider } from "./components/ui/provider"; // O caminho pode variar conforme a instalação
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
@@ -9,4 +9,4 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <App />
     </Provider>
   </React.StrictMode>,
-)
+);
