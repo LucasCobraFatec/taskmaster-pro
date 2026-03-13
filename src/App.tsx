@@ -67,12 +67,12 @@ function App() {
   });
 
  return (
-    <Box padding="8" bg="gray.50" minHeight="100vh">
+    <Box padding="8" bg="white" color="gray.800" minHeight="100vh">
      
       <Stack gap="6" maxWidth="400px" margin="0 auto">
         
         <Stack gap="2">
-          <Text fontSize="2xl" fontWeight="bold" textAlign="center">Meu TaskMaster</Text>
+          <Text fontSize="2xl" fontWeight="bold" textAlign="center">TaskMaster</Text>
           
           <Box width="100%" px="2">
             <Flex justifyContent="space-between" mb="1">
@@ -132,7 +132,7 @@ function App() {
             </Box>
           ) : (
             filteredTasks.map(task => (
-              <Card.Root key={task.id} width="100%">
+             <Card.Root key={task.id} width="100%" bg="white" color="gray.800">
                 <Card.Body>
                   <Card.Title textDecoration={task.status === 'concluída' ? 'line-through' : 'none'}>
                     {task.title}
