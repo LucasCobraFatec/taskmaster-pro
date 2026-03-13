@@ -11,21 +11,23 @@ O **TaskMaster Pro** é um gerenciador de tarefas robusto e moderno, focado em u
 
 ## 💡 Funcionalidades (CRUD Completo)
 
-* **Adição Dinâmica**: Crie tarefas instantaneamente com validação de campos.
-* **Toggle de Status**: Alterne entre "pendente" e "concluída" com feedback visual (tachado).
-* **Exclusão Inteligente**: Remova tarefas da lista utilizando filtros de array de alta performance.
-* **Interface Responsiva**: Layout adaptável construído com Chakra UI 3.
+- **Adição Dinâmica**: Crie tarefas instantaneamente com validação de campos.
+- **Toggle de Status**: Alterne entre "pendente" e "concluída" com feedback visual (tachado).
+- **Exclusão Inteligente**: Remova tarefas da lista utilizando filtros de array de alta performance.
+- **Interface Responsiva**: Layout adaptável construído com Chakra UI 3.
 
 ---
 
 ## 🛠️ Tecnologias e Conceitos Aplicados
 
 ### Frontend
+
 - **React 18**: Hooks (`useState`), renderização condicional e listas reativas.
 - **TypeScript**: Interfaces rigorosas, enums de status e segurança de tipos em toda a aplicação.
 - **Chakra UI 3**: Sistema de design declarativo e componentes acessíveis.
 
 ### Arquitetura de Dados
+
 - **Imutabilidade**: Manipulação do estado via Spread Operator (`[...]`) e métodos não destrutivos como `.map()` e `.filter()`.
 - **Tipagem de Dados**: Centralização de tipos em arquivos `.ts` para escalabilidade.
 
@@ -51,6 +53,7 @@ O **TaskMaster Pro** é um gerenciador de tarefas robusto e moderno, focado em u
 ## 📈 Evolução do Aprendizado
 
 Este projeto foi um marco no domínio do ecossistema React. Durante o desenvolvimento, superei desafios como:
+
 1.  Sincronização de estados complexos entre múltiplos componentes.
 2.  Resolução de conflitos de tipagem no TypeScript.
 3.  Implementação de UI moderna seguindo as convenções mais recentes do Chakra UI v3.
